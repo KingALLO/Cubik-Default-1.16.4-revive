@@ -1,6 +1,114 @@
 {
-  "parent": "minecraft:block/leaves",
-  "textures": {
-    "all": "minecraft:block/spruce_leaves"
-  }
+	"__comment": "Designed by KingALLO with Cubik Studio - https://cubik.studio",
+	"parent": "minecraft:block/leaves",
+	"textures": {
+		"all": "block/spruce_leaves",
+		"particle": "block/spruce_leaves"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Box1",
+			"from": [ 0, 0, 0 ],
+			"to": [ 16, 16, 16 ],
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 16 ], "texture": "#all" },
+				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#all" },
+				"north": { "uv": [ 0, 0, 16, 16 ], "texture": "#all" },
+				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#all" },
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#all" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#all" }
+			}
+		},
+		{
+			"__comment": "PlaneX4",
+			"from": [ 17, 0, -1 ],
+			"to": [ 17.001, 16, 24.5 ],
+			"rotation": { "origin": [ 17, 0, -1 ], "axis": "y", "angle": -45 },
+			"faces": {
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#all" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#all" }
+			}
+		},
+		{
+			"__comment": "PlaneX4",
+			"from": [ -1, 0, -1 ],
+			"to": [ -0.999, 16, 24.5 ],
+			"rotation": { "origin": [ -1, 0, -1 ], "axis": "y", "angle": 45 },
+			"faces": {
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#all" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#all" }
+			}
+		},
+		{
+			"__comment": "PlaneY7",
+			"from": [ 0, 7, -4.5 ],
+			"to": [ 16, 7.001, 10 ],
+			"rotation": { "origin": [ 0, 7, -4.5 ], "axis": "x", "angle": -45 },
+			"faces": {
+				"down": { "uv": [ 0, 3.5, 16, 16 ], "texture": "#all" },
+				"up": { "uv": [ 0, 0, 16, 12.5 ], "texture": "#all" }
+			}
+		},
+		{
+			"__comment": "PlaneY7",
+			"from": [ 0, 6.999, 5 ],
+			"to": [ 16, 7, 19.5 ],
+			"rotation": { "origin": [ 0, 7, 19.5 ], "axis": "x", "angle": 45 },
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 12.5 ], "texture": "#all" },
+				"up": { "uv": [ 0, 3.5, 16, 16 ], "texture": "#all" }
+			}
+		},
+		{
+			"__comment": "PlaneY11",
+			"from": [ 8.5, -2.5, -0.0001 ],
+			"to": [ 24.5, -2.499, 15.9999 ],
+			"rotation": { "origin": [ 8.5, -2.5, 0 ], "axis": "z", "angle": 45 },
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 16 ], "texture": "#all" },
+				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#all" }
+			}
+		},
+		{
+			"__comment": "PlaneY11",
+			"from": [ -10, -2.501, -0.0001 ],
+			"to": [ 6, -2.5, 15.9999 ],
+			"rotation": { "origin": [ 6, -2.5, 0 ], "axis": "z", "angle": -45 },
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 16 ], "texture": "#all", "rotation": 180 },
+				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#all", "rotation": 180 }
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation":  [ 75, 45, 0 ],
+			"translation":  [ 0, 2.5, 0 ],
+			"scale":  [ 0.375, 0.375, 0.375 ]
+		},
+		"thirdperson_lefthand": {
+			"rotation":  [ 75, 45, 0 ],
+			"translation":  [ 0, 2.5, 0 ],
+			"scale":  [ 0.375, 0.375, 0.375 ]
+		},
+		"firstperson_righthand": {
+			"rotation":  [ 0, 45, 0 ],
+			"scale":  [ 0.4, 0.4, 0.4 ]
+		},
+		"firstperson_lefthand": {
+			"rotation":  [ 0, 45, 0 ],
+			"scale":  [ 0.4, 0.4, 0.4 ]
+		},
+		"gui": {
+			"rotation":  [ 30, 225, 0 ],
+			"scale":  [ 0.625, 0.625, 0.625 ]
+		},
+		"ground": {
+			"translation":  [ 0, 3, 0 ],
+			"scale":  [ 0.25, 0.25, 0.25 ]
+		},
+		"fixed": {
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		}
+	}
 }
